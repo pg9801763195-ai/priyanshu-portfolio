@@ -1,0 +1,114 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#020617;
+color:white;
+transition:.4s;
+overflow-x:hidden;
+}
+
+/* LIGHT MODE */
+.light{
+background:white;
+color:black;
+}
+
+nav{
+position:fixed;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+background:rgba(0,0,0,.6);
+backdrop-filter:blur(10px);
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:inherit;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+/* PARALLAX */
+.hero{
+background:linear-gradient(120deg,#0f172a,#1e293b);
+background-attachment:fixed;
+}
+
+.section{
+padding:120px 8%;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+padding:30px;
+margin:20px 0;
+border-radius:12px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* CUSTOM CURSOR */
+.cursor{
+width:18px;
+height:18px;
+border:2px solid white;
+border-radius:50%;
+position:fixed;
+pointer-events:none;
+transform:translate(-50%,-50%);
+z-index:9999;
+}
+
+/* PAGE FADE */
+.fade{
+opacity:0;
+transform:translateY(40px);
+animation:fadeUp 1s forwards;
+}
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+input,textarea{
+width:100%;
+padding:14px;
+margin:10px 0;
+border:none;
+border-radius:8px;
+}
+
+button{
+padding:12px 20px;
+cursor:pointer;
+border:none;
+border-radius:8px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+opacity:.6;
+}
